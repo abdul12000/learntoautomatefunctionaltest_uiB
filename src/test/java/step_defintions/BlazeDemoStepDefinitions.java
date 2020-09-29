@@ -47,7 +47,7 @@ base.driver.get("https://blazedemo.com/index.php");
         assertThat(base.driver.getTitle(), is(equalTo("BlazeDemo - reserve")));
 
         //check that there are 5 'Choose the flight' buttons
-        assertThat(blazeDemoReservePage.getNumberofChooseThisFlightButtons(), is(equalTo(6)));
+        assertThat(blazeDemoReservePage.getNumberofChooseThisFlightButtons(), is(equalTo(5)));
 
     }
 }
