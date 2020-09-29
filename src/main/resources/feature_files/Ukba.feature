@@ -1,4 +1,4 @@
-@RunallTest
+#@RunallTest
 Feature: Confirm whether a visa is required to visit the UK
 
 Background:
@@ -62,7 +62,7 @@ Given I am on the UKBA website
     And I submit the form
     Then I will be informed "You’ll need a visa to come to the UK"
 
-#  @Testtorun
+  @RunallTest
   Scenario Outline: Nationalities coming to UK for Tourism and not visiting Family will require Visa with Examples
     When I provide nationality of "<CountryName>"
     And I click on the Next step button
