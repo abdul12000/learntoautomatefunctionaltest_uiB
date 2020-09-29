@@ -1,4 +1,4 @@
-@RunallTest
+#@RunallTest
 Feature: As a User I want to be able to sign in to Mercury Tours so that i can access my account
   @Testtorun
 Scenario: Sign in with valid details (Happy path)

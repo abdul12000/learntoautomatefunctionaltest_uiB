@@ -1,4 +1,4 @@
-@RunallTest
+#@RunallTest
 Feature:
 
 #  @Testtorun
