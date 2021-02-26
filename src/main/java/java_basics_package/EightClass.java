@@ -15,15 +15,15 @@ public class EightClass {
         int p = 0;
         do {
             System.out.println("Value of p = : " + p);
-            p++;
+            ++p;
         }
         while (p < 10);
 
-//using dereament
+//using decrement
         int k = 10; //declaring  and initializing i
         while (k > 5) {
             System.out.println("the value of k is : " + k);
-            k--;
+            --k;
         }
     }
 }

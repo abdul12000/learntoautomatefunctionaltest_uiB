@@ -11,6 +11,11 @@ public class FifthClass {
         int convertedNumber = Integer.parseInt(numberEntered);
         if (convertedNumber<21 && convertedNumber>0){
             System.out.println("You have enter a valid number :" + convertedNumber);
+
+            //previous class -FourthClass can go here
+//            for (int i=1; i <=convertedNumber ; i++ ){
+//                System.out.println(i);
+//            }
         }else
 
         System.out.println("You have not entered a valid number ");

@@ -1,6 +1,6 @@
 @RunallTest
 Feature: BlazeDemo purchase flight
-
+  @GoogleSearch
 #  @Testtorun
   Scenario Outline:  Choosing Departure and destination Cities and finding flights
     Given I am on the Welcome to Simple Travel Agency landing page

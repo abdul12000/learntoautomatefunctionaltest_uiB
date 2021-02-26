@@ -1,5 +1,7 @@
 package java_basics_package;
 
+import java.util.Arrays;
+
 public class NinthClass {
     //Arrays
     public static void main(String[] args) {
@@ -44,6 +46,18 @@ public class NinthClass {
         for(int k = 0; k <nArrays.length; k++){
             for(int t=0; t< nArrays[k].length; t++){
                 System.out.println(nArrays[k][t]);
-            }}
+            }
+        }
+
+
+        String[] strArray1 = {"A", "B", "C", "P", "F", "E"};
+        int arrayLenth = strArray1.length;
+        System.out.println("arrayLenhght is : " + arrayLenth);
+        System.out.println(Arrays.stream(strArray1).count());
+
+
+
+
+
     }
 }

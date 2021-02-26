@@ -1,7 +1,7 @@
 #@RunallTest
 Feature:
 
-#  @Testtorun
+  @TesttorunAABB
   Scenario Outline: Register by  entering all information  requested (both mandatory and non-mandatory information)
 
     Given I am on the Newtours Landing page
@@ -16,7 +16,7 @@ Feature:
       | LateefA   | AdeAA    | 0788366644  | boggaley@gmail.com | 33 alderney road | Maidstone | Kent  | db4 4ek  | Greece         | Tomiwa   | 123456   |
 
 
-#  @Testtorun
+  @TesttorunAAA
   Scenario Outline: Register by  entering contact information and User information
     Given I am on the Newtours Landing page
     When i Click on "REGISTER" link
@@ -25,7 +25,7 @@ Feature:
     Then I should be able to create a new User and verify with "<FirstName>", "<LastName>" and "<Username>"
     Examples:
       | FirstName | LastName | PhoneNUmber | Email              | Username | Password |
-      | LateefB    | AdeB      | 078836656  | boggaley@gmail.com | GAde     | 123456   |
+      | LateefB    | AdeB      | 078836656  | boggaley@gmail.com | 1234567890qwertyuiop12345678901234567890qwertyuiop1234567890A     | 123456   |
 
 #  @Testtorun
   Scenario Outline: Register by  entering all information  requested with country Number

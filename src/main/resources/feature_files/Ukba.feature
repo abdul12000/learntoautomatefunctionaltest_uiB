@@ -1,4 +1,4 @@
-#@RunallTest
+@TesttorunAAAB
 Feature: Confirm whether a visa is required to visit the UK
 
 Background:
@@ -13,7 +13,7 @@ Given I am on the UKBA website
     And I submit the form
     Then I will be informed "You’ll need a visa to study in the UK"
 
-#  @Testtorun
+  @RunallTest1
   Scenario Outline: Japan nationalities coming to UK to study for more than 6 months require Visa with Examples
     When I provide nationality of "<CountryName>"
     And I click on the Next step button
@@ -26,8 +26,8 @@ Given I am on the UKBA website
       | CountryName | Reason | Message                               |
       | Japan       | Study  | You’ll need a visa to study in the UK |
       | Ukraine     | Study  | You’ll need a visa to study in the UK |
-      | Morocco     | Study  | You’ll need a visa to study in the UK |
-      | USA         | Study  | You’ll need a visa to study in the UK |
+#      | Morocco     | Study  | You’ll need a visa to study in the UK |
+#      | USA         | Study  | You’ll need a visa to study in the UK |
 
 #  @Testtorun
   Scenario: Japan nationalities coming to UK for Tourism do not require Visa
@@ -35,9 +35,9 @@ Given I am on the UKBA website
     And I click on the Next step button
     And I select the reason as "Tourism"
     And I submit the form
-    Then I will be informed "You won’t need a visa to come to the UK"
+    Then I will be informed "You do not need a visa if you’re staying up to 6 months"
 
-#  @Testtorun
+  @RunallTest1
   Scenario Outline: Nationalities coming to UK for Tourism do not require Visa Using scenario outline with examples
     When I provide nationality of "<CountryName>"
     And I click on the Next step button
@@ -48,8 +48,8 @@ Given I am on the UKBA website
       | CountryName | Reason  | MessageToBeDisplayed                    |
       | Japan       | Tourism | You won’t need a visa to come to the UK |
       | USA         | Tourism | You won’t need a visa to come to the UK |
-      | Malaysia    | Tourism | You won’t need a visa to come to the UK |
-      | Canada      | Tourism | You won’t need a visa to come to the UK |
+#      | Malaysia    | Tourism | You won’t need a visa to come to the UK |
+#      | Canada      | Tourism | You won’t need a visa to come to the UK |
 
 
 #  @Testtorun
@@ -62,7 +62,7 @@ Given I am on the UKBA website
     And I submit the form
     Then I will be informed "You’ll need a visa to come to the UK"
 
-  @RunallTest
+  @RunallTest1
   Scenario Outline: Nationalities coming to UK for Tourism and not visiting Family will require Visa with Examples
     When I provide nationality of "<CountryName>"
     And I click on the Next step button
@@ -75,5 +75,5 @@ Given I am on the UKBA website
       | CountryName | Reason  | Descision                            |
       | Russia      | Tourism | You’ll need a visa to come to the UK |
       | Cuba        | Tourism | You’ll need a visa to come to the UK |
-      | Belarus     | Tourism | You’ll need a visa to come to the UK |
-      | Albania     | Tourism | You’ll need a visa to come to the UK |
+#      | Belarus     | Tourism | You’ll need a visa to come to the UK |
+#      | Albania     | Tourism | You’ll need a visa to come to the UK |

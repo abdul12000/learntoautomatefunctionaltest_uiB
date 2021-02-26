@@ -1,10 +1,10 @@
 @RunallTest
 Feature: As a a first time buyer I want to be able to use mixture of some default  values and my chosen values to calculate mortgage rates
 
-#  @MortgageCalc
+  @MortgageCalc
   Scenario Outline: Calculate Mortgage rate with given values and default values
     Given I am on the Mortgage Calculator website
-    When I enter "<homeValue>", "<downPayment>", "<interestRate>", "<loanTerm>", "<startMonth>" and "<startYear>"
+    When I enter <homeValue>, "<downPayment>", "<interestRate>", "<loanTerm>", "<startMonth>" and "<startYear>"
     And accept default value for all the remaining values
     Then I should get mortage offer with "<totalMonthlyPayment>", "<downPaymentAMount>", "<downPaymentPercentage>", "<loanPayoffDate>", "<totalInterestPaid>" and "<monthlyTaxPaid>"
     Examples:

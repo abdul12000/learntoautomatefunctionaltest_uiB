@@ -6,5 +6,8 @@ public class FourthClass {
         for (int i=1; i <=100 ; i++ ){
             System.out.println(i);
         }
+        boolean iAmLateef = true;
+        System.out.println(!iAmLateef);
+
     }
 }

@@ -2,9 +2,7 @@ package java_basics_package;
 
 
 public class FirstClass {
-
     //Learning to print Hello World and Operators in Java
-
     public static void main(String[] args) {
         System.out.println("Hello World");
         int A = 10;

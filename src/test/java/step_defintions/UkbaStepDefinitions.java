@@ -23,11 +23,9 @@ public class UkbaStepDefinitions extends BaseUtil {
     @Given("I am on the UKBA website")
     public void i_am_on_the_ukba_website() {
         base.driver.manage().window().maximize();
-//base.driver.get("https://www.gov.uk/check-uk-visa/y");
+    //base.driver.get("https://www.gov.uk/check-uk-visa/y");
         base.driver.navigate().to("https://www.gov.uk/check-uk-visa/y");
         base.driver.findElement(By.xpath("//button[contains(text(),'Accept all cookies')]")).click();
-
-
     }
 
     @When("I provide nationality of {string}")
@@ -63,7 +61,6 @@ public class UkbaStepDefinitions extends BaseUtil {
     @Then("I will be informed {string}")
     public void i_will_be_informed(String msg) {
         assertThat(base.driver.findElement(By.xpath("//h2[starts-with(@class,'gem-c-heading')]")).getText(), is(equalTo(msg)));
-
     }
 
     @And("I select the reason as {string}")

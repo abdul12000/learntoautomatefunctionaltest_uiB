@@ -3,7 +3,7 @@ package java_basics_package;
 public class SixthClass {
     public static void main(String[] args) {
         //Switch Loop
-        int dayOfTheWeek = 10;
+        int dayOfTheWeek = 1;
         switch(dayOfTheWeek){
             case 1:
             case 2:

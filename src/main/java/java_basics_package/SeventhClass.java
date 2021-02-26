@@ -1,9 +1,17 @@
 package java_basics_package;
 
+import java.util.Scanner;
+
 public class SeventhClass {
     public static void main(String[] args) {
 //Using if else loop
-        int dayOfTheWeek = 4;
+//
+//        System.out.println( "Enter any number between 1 and 7");
+//        Scanner scanner = new Scanner(System.in);
+//        String numberEntered =scanner.nextLine();
+//        int dayOfTheWeek = Integer.parseInt(numberEntered);
+
+        int dayOfTheWeek = 1;
         if (dayOfTheWeek == 1){
             System.out.println("Monday");
         } else if (dayOfTheWeek == 2){
@@ -21,6 +29,13 @@ public class SeventhClass {
         }else {
             System.out.println("You have not entered a valid number");
         }
+
+        int A = 100;
+        int B = 50;
+        if (A>B){
+            System.out.println(A);
+        } else
+            System.out.println(B);
 
     }
 }
