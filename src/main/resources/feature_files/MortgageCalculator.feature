@@ -12,8 +12,8 @@ Feature: As a a first time buyer I want to be able to use mixture of some defaul
       | 50000     | 20000       | 5            | 25       | Sep        | 2020      | $458.71             | $20,000.00        | 40.00%                | Aug, 2045      | $22,613.10        | $203.00        |
 #      | 50000     | 20000       | 5            | 25       | Dec        | 2020      | $458.71             | $20,000.00        | 40.00%                | Nov, 2045      | $22,613.10        | $200.00        |
 
-
-  @MortgageCalc
+  @foresee1
+@mmm
   Scenario Outline: Calculate Mortgage rate with given values and default values
     Given I am on the Mortgage Calculator website
     When I enter the following

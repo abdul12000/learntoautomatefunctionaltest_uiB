@@ -28,6 +28,9 @@ public class PropertiesReader {
 
     public String getNewtoursURL() {
         return prop.getProperty("NewtoursURL");
+        /*hsjj
+
+         */
     }
 
     public String getUkbaURL() {

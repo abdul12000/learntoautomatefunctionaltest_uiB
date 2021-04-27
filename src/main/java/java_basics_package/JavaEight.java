@@ -17,6 +17,7 @@ public class JavaEight {
         int count = 0;
         for (int i=0; i<cars.size(); i++){
             String aCars = cars.get(i);
+            System.out.println(aCars);//printing all the car list
             if (aCars.startsWith("T")){
                 count++;
             }

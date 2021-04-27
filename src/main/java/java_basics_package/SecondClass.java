@@ -3,7 +3,7 @@ package java_basics_package;
 
 public class SecondClass {
   //Using Objects to call a method in java
-    private Integer multiplierMethod(){
+    public Integer multiplierMethod(){
         int a = 10;
         int b = 20;
         return a * b;

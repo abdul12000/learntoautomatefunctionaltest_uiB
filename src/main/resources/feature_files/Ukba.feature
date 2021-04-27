@@ -1,4 +1,5 @@
 @TesttorunAAAB
+@foresee1
 Feature: Confirm whether a visa is required to visit the UK
 
 Background:
@@ -12,6 +13,7 @@ Given I am on the UKBA website
     And I state I am intending to stay for more than 6 months
     And I submit the form
     Then I will be informed "You’ll need a visa to study in the UK"
+
 
   @RunallTest1
   Scenario Outline: Japan nationalities coming to UK to study for more than 6 months require Visa with Examples

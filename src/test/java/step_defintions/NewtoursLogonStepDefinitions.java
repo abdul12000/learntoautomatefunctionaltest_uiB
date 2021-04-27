@@ -42,7 +42,7 @@ public class NewtoursLogonStepDefinitions extends BaseUtil {
     @When("i enter valid Username as {string} and valid Password as {string}")
     public void i_enter_valid_username_as_and_valid_password_as(String uName, String pWord) throws Exception {
         NewtoursSignOnPage newtoursSignOnPage = new NewtoursSignOnPage(base.driver);
-        closePopUp();
+//        closePopUp();
 //        newtoursSignOnPage.enterUsername(uName);
 //        newtoursSignOnPage.enterPassword(pWord);
 
@@ -56,7 +56,7 @@ public class NewtoursLogonStepDefinitions extends BaseUtil {
     }
     @Then("I should be able to sign into my account")
     public void i_should_be_able_to_sign_into_my_account() throws InterruptedException {
-        closePopUp();
+//        closePopUp();
         assertThat(base.driver.getTitle(), is (equalTo("Login: Mercury Tours")));
         NewtoursLoginConfirmationPage newtoursLoginConfirmationPage = new NewtoursLoginConfirmationPage(base.driver);
         assertThat(newtoursLoginConfirmationPage.getHeaderText().toLowerCase(), is (equalTo("login successfully")));
@@ -66,7 +66,7 @@ public class NewtoursLogonStepDefinitions extends BaseUtil {
     @When("i enter invalid Username as {string} and valid Password as {string}")
     public void i_enter_invalid_username_as_and_valid_password_as(String uName, String pWord) throws InterruptedException {
         NewtoursSignOnPage newtoursSignOnPage = new NewtoursSignOnPage(base.driver);
-        closePopUp();
+//        closePopUp();
         newtoursSignOnPage.enterUsername(uName);
         newtoursSignOnPage.enterPassword(pWord);
         newtoursSignOnPage.clickOnSubmitButton();
@@ -74,7 +74,7 @@ public class NewtoursLogonStepDefinitions extends BaseUtil {
 
     @Then("I should remain on the SignOn page")
     public void iShouldRemainOnTheSignOnPage() throws InterruptedException {
-        closePopUp();
+//        closePopUp();
         assertThat(base.driver.getTitle(), is (equalTo("Sign-on: Mercury Tours")));
 
 

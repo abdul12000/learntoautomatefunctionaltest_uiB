@@ -1,7 +1,7 @@
-#@RunallTest
+@fores
 Feature:
 
-  @TesttorunAABB
+  @Newt
   Scenario Outline: Register by  entering all information  requested (both mandatory and non-mandatory information)
 
     Given I am on the Newtours Landing page
@@ -14,7 +14,6 @@ Feature:
       | FirstName | LastName | PhoneNUmber | Email              | Address          | City      | State | PostCode | Country        | Username | Password |
       | Lateef    | Ade      | 0788366643  | boggaley@gmail.com | 29 alderney road | LOndon    | Kent  | da7 4ek  | UNited KINGDOM | lAde     | 123456   |
       | LateefA   | AdeAA    | 0788366644  | boggaley@gmail.com | 33 alderney road | Maidstone | Kent  | db4 4ek  | Greece         | Tomiwa   | 123456   |
-
 
   @TesttorunAAA
   Scenario Outline: Register by  entering contact information and User information

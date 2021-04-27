@@ -25,7 +25,7 @@ public class UkbaStepDefinitions extends BaseUtil {
         base.driver.manage().window().maximize();
     //base.driver.get("https://www.gov.uk/check-uk-visa/y");
         base.driver.navigate().to("https://www.gov.uk/check-uk-visa/y");
-        base.driver.findElement(By.xpath("//button[contains(text(),'Accept all cookies')]")).click();
+        base.driver.findElement(By.xpath("//button[contains(text(),'Accept additional cookies')]")).click();
     }
 
     @When("I provide nationality of {string}")
@@ -36,7 +36,7 @@ public class UkbaStepDefinitions extends BaseUtil {
 
     @When("I click on the Next step button")
     public void i_click_on_the_next_step_button() {
-        base.driver.findElement(By.xpath("//button[contains(text(),'Next step')]")).click();
+        base.driver.findElement(By.xpath("//button[contains(text(),'Continue')]")).click();
 
     }
 

@@ -46,20 +46,25 @@ public class NewtoursRegistrationStepDefinitions extends BaseUtil {
         //Using non static method
         PropertiesReader propertiesReader = new PropertiesReader();
 base.driver.get(propertiesReader.getNewtoursURL());
-        closePopUp();
+//        closePopUp();
     }
+    public void clickBy(By locator){
+base.driver.findElement(locator).click();
+    }
+    private By RegisterLink = By.linkText("REGISTER");
 
     @When("i Click on {string} link")
-    public void i_click_on_link(String string) {
+    public void i_click_on_link(String name) {
         NewtoursWelcomePage newtoursWelcomePage = new NewtoursWelcomePage(base.driver);
-        newtoursWelcomePage.clickOnRegisterLink();
+//        newtoursWelcomePage.clickOnRegisterLink();
+        clickBy(RegisterLink);
 
 
     }
 
     @When("I enter all the contact information as {string}, {string}, {string} and {string}")
     public void i_enter_all_the_contact_information_as_and(String fName, String lName, String pNumber, String email) throws InterruptedException {
-        closePopUp();
+//        closePopUp();
         Storage.setRandomNumbers(Utility.generateRandomNumbers());
         System.out.println("Genearted random number is : " + Storage.getRandomNumbers());
         NewtoursRegisterPage newtoursRegisterPage = new NewtoursRegisterPage(base.driver);
@@ -93,7 +98,7 @@ base.driver.get(propertiesReader.getNewtoursURL());
 
     @Then("I should be able to create a new User and verify with {string}, {string} and {string}")
     public void i_should_be_able_to_create_a_new_user_and_verify_with_and(String fName, String lName, String uName) throws InterruptedException {
-        closePopUp();
+//        closePopUp();
         NewtoursRegisterConfirmationPage newtoursRegisterConfirmationPage = new NewtoursRegisterConfirmationPage(base.driver);
         assertThat(newtoursRegisterConfirmationPage.getDearText().contains(fName), equalTo(true));
         assertThat(newtoursRegisterConfirmationPage.getDearText().contains(lName), equalTo(true));

@@ -3,6 +3,7 @@ package step_defintions;
 import base.BaseUtil;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,7 +22,11 @@ public class Hook extends BaseUtil {
     @Before
     //https://www.selenium.dev/documentation/en/webdriver/driver_requirements/
     public void innitialize(){
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
+//        base.driver = new ChromeDriver();
+
+        //https://github.com/bonigarcia/webdrivermanager
+        WebDriverManager.chromedriver().setup();
         base.driver = new ChromeDriver();
     }
 
@@ -37,6 +42,8 @@ public class Hook extends BaseUtil {
         File SrcFile = srcShot.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(SrcFile, new File("target/Screenshot" + System.currentTimeMillis() + ".png"));
     }
+
+
 
 
 }

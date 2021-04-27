@@ -1,6 +1,6 @@
 Feature: Adding item on the basket on Next website
   As a user I should be able add item to the basket on the website so that i can pay for them
-  @TesttorunNext
+  @fore
   Scenario: adding one item from the Womens category to the basket
     Given I am on the next Home page
     When I choose "WOMEN" category
