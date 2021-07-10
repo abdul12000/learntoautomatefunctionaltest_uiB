@@ -49,7 +49,7 @@ public class NinthClass {
             }
         }
 
-
+//java8
         String[] strArray1 = {"A", "B", "C", "P", "F", "E"};
         int arrayLenth = strArray1.length;
         System.out.println("arrayLenhght is : " + arrayLenth);

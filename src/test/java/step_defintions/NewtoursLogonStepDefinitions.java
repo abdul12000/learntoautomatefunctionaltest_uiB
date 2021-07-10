@@ -17,8 +17,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class NewtoursLogonStepDefinitions extends BaseUtil {
     private BaseUtil base;
-
-
     public NewtoursLogonStepDefinitions(BaseUtil base) {
         this.base = base;
     }

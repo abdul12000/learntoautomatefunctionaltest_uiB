@@ -5,6 +5,6 @@ public class TestClass {
         SecondClass ss = new SecondClass();
         System.out.println(ss.multiplierMethod());
 
-        System.out.println(EnumTest.HONDA);
+        System.out.println(EnumTest.PASAT);
     }
 }

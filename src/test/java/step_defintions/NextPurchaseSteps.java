@@ -23,7 +23,6 @@ public class NextPurchaseSteps extends BaseUtil {
     @Given("I am on the next Home page")
     public void i_am_on_the_next_home_page() {
         base.driver.manage().window().maximize();
-        ;
         base.driver.get("https://www.next.co.uk/");
     }
 

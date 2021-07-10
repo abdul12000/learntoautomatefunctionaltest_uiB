@@ -4,7 +4,7 @@ Feature: Confirm whether a visa is required to visit the UK
 
 Background:
 Given I am on the UKBA website
-#  @Testtorun
+ @Testtorunaaa
   Scenario: Japan nationalities coming to UK to study for more than 6 months require Visa
     When I provide nationality of "Japan"
     And I click on the Next step button
@@ -37,7 +37,7 @@ Given I am on the UKBA website
     And I click on the Next step button
     And I select the reason as "Tourism"
     And I submit the form
-    Then I will be informed "You do not need a visa if you’re staying up to 6 months"
+    Then I will be informed "You will not need a visa to come to the UK"
 
   @RunallTest1
   Scenario Outline: Nationalities coming to UK for Tourism do not require Visa Using scenario outline with examples
@@ -48,8 +48,8 @@ Given I am on the UKBA website
     Then I will be informed "<MessageToBeDisplayed>"
     Examples:
       | CountryName | Reason  | MessageToBeDisplayed                    |
-      | Japan       | Tourism | You won’t need a visa to come to the UK |
-      | USA         | Tourism | You won’t need a visa to come to the UK |
+      | Japan       | Tourism | You will not need a visa to come to the UK|
+      | USA         | Tourism | You will not need a visa to come to the UK|
 #      | Malaysia    | Tourism | You won’t need a visa to come to the UK |
 #      | Canada      | Tourism | You won’t need a visa to come to the UK |
 
